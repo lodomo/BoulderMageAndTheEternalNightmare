@@ -13,12 +13,18 @@ public class WallCheck : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        var otherTag = other.gameObject.GetComponent<MoonTags>();
+        if (otherTag == null) return;
+        if (otherTag.TagList != TagList.Stage) return;
         OnWall?.Invoke();
         _onWallBool = true;
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
+        var otherTag = other.gameObject.GetComponent<MoonTags>();
+        if (otherTag == null) return;
+        if (otherTag.TagList != TagList.Stage) return;
         OffWall?.Invoke();
         _onWallBool = false;
     }

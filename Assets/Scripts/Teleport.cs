@@ -28,7 +28,7 @@ public class Teleport : MonoBehaviour
         if (horizontalWarp) { teleportee.x = sisterPortal.position.x; }
         //sisterPortalTeleport.LastTeleportee = other.gameObject;
         other.gameObject.transform.position = teleportee;
-        print(gameObject.name + "says Teleport Successful!");
+        //print(gameObject.name + "says Teleport Successful!");
     }
 
     private void OnTriggerExit2D(Collider2D other)
