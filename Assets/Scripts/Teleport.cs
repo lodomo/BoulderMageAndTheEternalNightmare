@@ -8,10 +8,7 @@ public class Teleport : MonoBehaviour
 {
     [SerializeField] private Transform sisterPortal;
     private Teleport sisterPortalTeleport;
-    [SerializeField] private bool verticalWarp;
-    [SerializeField] private bool horizontalWarp;
-    //[HideInInspector] public GameObject LastTeleportee;
-    
+
     private void Awake()
     {
         sisterPortalTeleport = sisterPortal.gameObject.GetComponent<Teleport>();
@@ -19,20 +16,22 @@ public class Teleport : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        
-        //if (other.gameObject == LastTeleportee) return;
         if (other.gameObject.GetComponent<Warpable>() == null) return;
+        var sisterVector2 = sisterPortal.position;
+        var otherObject = other.gameObject;
+        var teleportee = otherObject.transform.position;
         
-        var teleportee = other.gameObject.transform.position;
-        if (verticalWarp) { teleportee.y = sisterPortal.position.y; }
-        if (horizontalWarp) { teleportee.x = sisterPortal.position.x; }
-        //sisterPortalTeleport.LastTeleportee = other.gameObject;
-        other.gameObject.transform.position = teleportee;
-        //print(gameObject.name + "says Teleport Successful!");
+        teleportee.y = sisterVector2.y;
+        teleportee.x = sisterVector2.x;
+        otherObject.transform.position = teleportee;
+        StartCoroutine(TeleportDelay());
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    private IEnumerator TeleportDelay()
     {
-        //LastTeleportee = null;
+        var sPbc2d = sisterPortal.gameObject.GetComponent<BoxCollider2D>();
+        sPbc2d.enabled = false;
+        yield return new WaitForSeconds(0.5f);
+        sPbc2d.enabled = true;
     }
 }

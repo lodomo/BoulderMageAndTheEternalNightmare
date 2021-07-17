@@ -85,7 +85,7 @@ public class PlayerInput : MonoBehaviour
     {
         if (!b) return;
         a?.Invoke();
-        print("Button Pressed");
+        //print("Button Pressed");
     }
 }
 

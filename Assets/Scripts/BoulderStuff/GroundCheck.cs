@@ -11,6 +11,7 @@ public class GroundCheck : MonoBehaviour
 
     [SerializeField] private float CoyoteTime;
     private WaitForSeconds CoyoteWaitTime;
+    private bool reGround = false;
     
     private bool _onGroundBool;
     public bool onGroundBool => _onGroundBool;
@@ -22,7 +23,11 @@ public class GroundCheck : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D other)
     {
-       OnGround?.Invoke();
+        if (_onGroundBool)
+        {
+            reGround = true;
+        }
+        OnGround?.Invoke();
        _onGroundBool = true;
     }
 
@@ -34,7 +39,14 @@ public class GroundCheck : MonoBehaviour
     private IEnumerator Co_CoyoteTime()
     {
         yield return CoyoteWaitTime;
-        OffGround?.Invoke();
-        _onGroundBool = false;
+        
+        if (!reGround)
+        {
+            OffGround?.Invoke();
+            _onGroundBool = false;
+        }
+        
+        reGround = false;
+
     }
 }

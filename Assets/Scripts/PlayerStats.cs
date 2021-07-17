@@ -16,8 +16,18 @@ public class PlayerStats : MonoBehaviour
     public void ChangeCurHearts(int i)
     {
         curHearts += i;
+
+        if (curHearts > maxHearts)
+        {
+            curHearts = maxHearts;
+        }
+
+        if (curHearts < 0)
+        {
+            curHearts = 0;
+        }
     }
-    
+
     public void ChangeLives(int i)
     {
         lives += i;

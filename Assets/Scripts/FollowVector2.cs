@@ -10,11 +10,12 @@ public class FollowVector2 : MonoBehaviour
     private Vector2 dom;
     private Vector2 sub;
     private float moveSpeed;
-    private const float MaxDistance = 8;
+    private const float MaxDistance = 4;
     private const float ProposedMoveSpeed = 30;
     [SerializeField] public bool isFollowing = false;
     private Transform _transform;
     private WaitForFixedUpdate _waitForFixedUpdate = new WaitForFixedUpdate();
+    private WaitForEndOfFrame _waitForEndOfFrame = new WaitForEndOfFrame();
 
     private void Awake()
     {
@@ -35,6 +36,11 @@ public class FollowVector2 : MonoBehaviour
         
         while (isFollowing)
         {
+            if (TooFarFromLeader(dom, sub))
+            {
+                _transform.position = dom;
+            }
+            
             dom = Dom.position;
             sub = _transform.position;
             
@@ -49,12 +55,7 @@ public class FollowVector2 : MonoBehaviour
                 moveSpeed = 300;
             }
             rb2d.velocity = new Vector2(direction.x * moveSpeed, direction.y * moveSpeed);
-
-            if (TooFarFromLeader(dom, sub))
-            {
-                _transform.position = dom;
-            }
-
+            
             yield return _waitForFixedUpdate;
         }
     }
