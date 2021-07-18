@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,9 +10,13 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] private int curHearts = 3;
     [SerializeField] private int lives = 3;
     [SerializeField] private int coins = 0;
+    [SerializeField] private Transform reSpawnLocation;
     public int CurHearts => curHearts;
     public int Lives => lives;
     public int Coins => coins;
+
+    public Action HeartsChanged;
+    public Action<GameObject> SetRespawner;
 
     public void ChangeCurHearts(int i)
     {
@@ -26,6 +31,8 @@ public class PlayerStats : MonoBehaviour
         {
             curHearts = 0;
         }
+        
+        HeartsChanged?.Invoke();
     }
 
     public void ChangeLives(int i)
@@ -38,5 +45,10 @@ public class PlayerStats : MonoBehaviour
         coins += i;
         
         //TODO Lives from coins.
+    }
+
+    public void SetRespawn(Transform newRespawn)
+    {
+        reSpawnLocation = newRespawn;
     }
 }

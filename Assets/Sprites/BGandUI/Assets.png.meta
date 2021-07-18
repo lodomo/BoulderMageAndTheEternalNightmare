@@ -13,31 +13,31 @@ TextureImporter:
     second: BackgroundSpriteSheet_2
   - first:
       213: -5035860550095137935
-    second: BackgroundSpriteSheet_3
+    second: Respawn_0
   - first:
       213: -4842273378816738804
-    second: BackgroundSpriteSheet_4
+    second: Respawn_1
   - first:
       213: -9139022750145930087
-    second: BackgroundSpriteSheet_5
+    second: Respawn_2
   - first:
       213: 4661332410636905610
-    second: BackgroundSpriteSheet_6
+    second: Respawn_3
   - first:
       213: -3237779017781031316
-    second: BackgroundSpriteSheet_7
+    second: Respawn_4
   - first:
       213: 3124294923786378854
-    second: BackgroundSpriteSheet_8
+    second: Respawn_5
   - first:
       213: -1949589218999574680
-    second: BackgroundSpriteSheet_9
+    second: Respawn_6
   - first:
       213: 2423660670727048312
-    second: BackgroundSpriteSheet_10
+    second: Respawn_7
   - first:
       213: -1734106550412212453
-    second: BackgroundSpriteSheet_11
+    second: Respawn_8
   - first:
       213: 337139161190187533
     second: BackgroundSpriteSheet_12
@@ -913,7 +913,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BackgroundSpriteSheet_3
+      name: Respawn_0
       rect:
         serializedVersion: 2
         x: 24
@@ -934,7 +934,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BackgroundSpriteSheet_4
+      name: Respawn_1
       rect:
         serializedVersion: 2
         x: 32
@@ -955,7 +955,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BackgroundSpriteSheet_5
+      name: Respawn_2
       rect:
         serializedVersion: 2
         x: 40
@@ -976,7 +976,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BackgroundSpriteSheet_6
+      name: Respawn_3
       rect:
         serializedVersion: 2
         x: 48
@@ -997,7 +997,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BackgroundSpriteSheet_7
+      name: Respawn_4
       rect:
         serializedVersion: 2
         x: 56
@@ -1018,7 +1018,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BackgroundSpriteSheet_8
+      name: Respawn_5
       rect:
         serializedVersion: 2
         x: 64
@@ -1039,7 +1039,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BackgroundSpriteSheet_9
+      name: Respawn_6
       rect:
         serializedVersion: 2
         x: 72
@@ -1060,7 +1060,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BackgroundSpriteSheet_10
+      name: Respawn_7
       rect:
         serializedVersion: 2
         x: 80
@@ -1081,7 +1081,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BackgroundSpriteSheet_11
+      name: Respawn_8
       rect:
         serializedVersion: 2
         x: 88
