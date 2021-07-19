@@ -40,9 +40,16 @@ public class RoomData : MonoBehaviour
         }
     }
 
-    public void DestroyStartRoom()
+    private void DestroyStartRoom()
     {
         if (spawnedRoom == null) return;
         Destroy(spawnedRoom);
+    }
+
+    public void RoomClear()
+    {
+        DestroyStartRoom();
+        Instantiate(clearedRoom, transform);
+        thisRoom.isCleared = true;
     }
 }

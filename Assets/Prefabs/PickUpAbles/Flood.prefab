@@ -202,6 +202,8 @@ GameObject:
   - component: {fileID: 1301843551188616233}
   - component: {fileID: 3368663050346028926}
   - component: {fileID: 593445197389814942}
+  - component: {fileID: 4230970046475745337}
+  - component: {fileID: -915324555780438486}
   m_Layer: 0
   m_Name: Flood
   m_TagString: Untagged
@@ -339,7 +341,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.5}
+  m_Size: {x: 0.5, y: 0.6}
   m_EdgeRadius: 0
 --- !u!50 &593445197389814942
 Rigidbody2D:
@@ -362,6 +364,38 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &4230970046475745337
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5166314122573312836}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c8316e1c2af17b140956be02775b975e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-915324555780438486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5166314122573312836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec7fce2ca06acbb489b2982d36a20e62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyTime: 1
 --- !u!1 &7237157501034003604
 GameObject:
   m_ObjectHideFlags: 0
