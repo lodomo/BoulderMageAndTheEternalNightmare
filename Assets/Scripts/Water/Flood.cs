@@ -66,8 +66,10 @@ public class Flood : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (oldFlooder) return;
+        var getTag = other.gameObject.GetComponent<MoonTags>();
+        if (getTag != null && getTag.TagList == TagList.Player) return;
         var damagable = other.gameObject.GetComponent<IDamagable>();
-
+        
         damagable?.TakeDamage(10);
 
         //var enemyRb2d = getEnemy.GetComponent<Rigidbody2D>();

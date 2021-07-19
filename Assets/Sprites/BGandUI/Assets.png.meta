@@ -328,7 +328,7 @@ TextureImporter:
     second: BackgroundSpriteSheet_107
   - first:
       213: -5503733815272276902
-    second: BackgroundSpriteSheet_108
+    second: DustJump_0
   - first:
       213: -2607558840439351547
     second: BackgroundSpriteSheet_109
@@ -376,7 +376,7 @@ TextureImporter:
     second: BackgroundSpriteSheet_123
   - first:
       213: 4111377235241519443
-    second: BackgroundSpriteSheet_124
+    second: DustJump_1
   - first:
       213: -1735792340208022902
     second: BackgroundSpriteSheet_125
@@ -424,7 +424,7 @@ TextureImporter:
     second: BackgroundSpriteSheet_139
   - first:
       213: -8160652837881166
-    second: BackgroundSpriteSheet_140
+    second: DustJump_2
   - first:
       213: 2033078152744965990
     second: BackgroundSpriteSheet_141
@@ -472,7 +472,7 @@ TextureImporter:
     second: BackgroundSpriteSheet_155
   - first:
       213: -312364266609962601
-    second: BackgroundSpriteSheet_156
+    second: DustLand_0
   - first:
       213: 9148062001322316250
     second: BackgroundSpriteSheet_157
@@ -520,7 +520,7 @@ TextureImporter:
     second: BackgroundSpriteSheet_171
   - first:
       213: -5897959743638886746
-    second: BackgroundSpriteSheet_172
+    second: DustLand_1
   - first:
       213: -9180806353161721994
     second: BackgroundSpriteSheet_173
@@ -568,7 +568,7 @@ TextureImporter:
     second: BackgroundSpriteSheet_187
   - first:
       213: -2023067530120719664
-    second: BackgroundSpriteSheet_188
+    second: DustLand_2
   - first:
       213: -1695581437084769533
     second: BackgroundSpriteSheet_189
@@ -3118,12 +3118,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BackgroundSpriteSheet_108
+      name: DustJump_0
       rect:
         serializedVersion: 2
         x: 96
         y: 72
-        width: 8
+        width: 32
         height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -3134,69 +3134,6 @@ TextureImporter:
       bones: []
       spriteID: a5cf36a414fce93b0800000000000000
       internalID: -5503733815272276902
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_109
-      rect:
-        serializedVersion: 2
-        x: 104
-        y: 72
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 507dea0dc0710dbd0800000000000000
-      internalID: -2607558840439351547
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_110
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 72
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1c3ee1f860cb68c40800000000000000
-      internalID: 5514301530118742977
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_111
-      rect:
-        serializedVersion: 2
-        x: 120
-        y: 72
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 360450eced43effe0800000000000000
-      internalID: -1153426323016433565
       vertices: []
       indices: 
       edges: []
@@ -3412,12 +3349,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BackgroundSpriteSheet_124
+      name: DustJump_1
       rect:
         serializedVersion: 2
         x: 96
         y: 64
-        width: 8
+        width: 32
         height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -3428,69 +3365,6 @@ TextureImporter:
       bones: []
       spriteID: 359c23cffcb8e0930800000000000000
       internalID: 4111377235241519443
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_125
-      rect:
-        serializedVersion: 2
-        x: 104
-        y: 64
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a8a8e0e201a39e7e0800000000000000
-      internalID: -1735792340208022902
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_126
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 64
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7a493fcaaf0b6fd70800000000000000
-      internalID: 9076636689701770407
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_127
-      rect:
-        serializedVersion: 2
-        x: 120
-        y: 64
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dd8a48ed4293e6d20800000000000000
-      internalID: 3273616809659771101
       vertices: []
       indices: 
       edges: []
@@ -3748,12 +3622,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BackgroundSpriteSheet_140
+      name: DustJump_2
       rect:
         serializedVersion: 2
         x: 96
         y: 56
-        width: 8
+        width: 32
         height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -3764,69 +3638,6 @@ TextureImporter:
       bones: []
       spriteID: 2ba7672fde103eff0800000000000000
       internalID: -8160652837881166
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_141
-      rect:
-        serializedVersion: 2
-        x: 104
-        y: 56
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 66798f6eec1f63c10800000000000000
-      internalID: 2033078152744965990
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_142
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 56
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 31e6b7d9816b5b760800000000000000
-      internalID: 7473079373528788499
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_143
-      rect:
-        serializedVersion: 2
-        x: 120
-        y: 56
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e083c491de8938930800000000000000
-      internalID: 4144324226210084878
       vertices: []
       indices: 
       edges: []
@@ -4084,12 +3895,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BackgroundSpriteSheet_156
+      name: DustLand_0
       rect:
         serializedVersion: 2
         x: 96
         y: 48
-        width: 8
+        width: 32
         height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -4100,69 +3911,6 @@ TextureImporter:
       bones: []
       spriteID: 7911030ca524aabf0800000000000000
       internalID: -312364266609962601
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_157
-      rect:
-        serializedVersion: 2
-        x: 104
-        y: 48
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ad1d014fbe174fe70800000000000000
-      internalID: 9148062001322316250
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_158
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 48
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a3dfbb619eaee61d0800000000000000
-      internalID: -3355486385514742470
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_159
-      rect:
-        serializedVersion: 2
-        x: 120
-        y: 48
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 431803a15bf199c10800000000000000
-      internalID: 2060713167187640628
       vertices: []
       indices: 
       edges: []
@@ -4420,12 +4168,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BackgroundSpriteSheet_172
+      name: DustLand_1
       rect:
         serializedVersion: 2
         x: 96
         y: 40
-        width: 8
+        width: 32
         height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -4436,69 +4184,6 @@ TextureImporter:
       bones: []
       spriteID: 6a6a9d4acdc362ea0800000000000000
       internalID: -5897959743638886746
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_173
-      rect:
-        serializedVersion: 2
-        x: 104
-        y: 40
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 67765288349379080800000000000000
-      internalID: -9180806353161721994
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_174
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 40
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3108169762fbb8320800000000000000
-      internalID: 2561350985056354323
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_175
-      rect:
-        serializedVersion: 2
-        x: 120
-        y: 40
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 912b10bd7ba682320800000000000000
-      internalID: 2533392128281784857
       vertices: []
       indices: 
       edges: []
@@ -4756,12 +4441,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BackgroundSpriteSheet_188
+      name: DustLand_2
       rect:
         serializedVersion: 2
         x: 96
         y: 32
-        width: 8
+        width: 32
         height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -4772,69 +4457,6 @@ TextureImporter:
       bones: []
       spriteID: 0d2178eccce9ce3e0800000000000000
       internalID: -2023067530120719664
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_189
-      rect:
-        serializedVersion: 2
-        x: 104
-        y: 32
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 303e0d2aaa51878e0800000000000000
-      internalID: -1695581437084769533
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_190
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 32
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cc0c5fe4e95b141c0800000000000000
-      internalID: -4521132859369078580
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_191
-      rect:
-        serializedVersion: 2
-        x: 120
-        y: 32
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 369a1ee4df21a2300800000000000000
-      internalID: 228015610295069027
       vertices: []
       indices: 
       edges: []

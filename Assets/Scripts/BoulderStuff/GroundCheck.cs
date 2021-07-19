@@ -14,7 +14,7 @@ public class GroundCheck : MonoBehaviour
     private bool reGround = false;
     
     private bool _onGroundBool;
-    public bool onGroundBool => _onGroundBool;
+    public bool OnGroundBool => _onGroundBool;
     private bool onGroundThisFrame;
 
     private Transform _transform;

@@ -11,9 +11,11 @@ public class RoomData : MonoBehaviour
     [SerializeField] private GameObject startRoom;
 
     private GameObject spawnedRoom;
+    private bool _isclearedRoomNotNull;
 
     void Start()
     {
+        _isclearedRoomNotNull = clearedRoom != null;
         thisRoom = roomControllerRoomMovement.rooms[roomNumberInArray];
         roomControllerRoomMovement.RoomChange += RoomCheck;
     }
@@ -49,7 +51,12 @@ public class RoomData : MonoBehaviour
     public void RoomClear()
     {
         DestroyStartRoom();
-        Instantiate(clearedRoom, transform);
+        
+        if (_isclearedRoomNotNull)
+        {
+            Instantiate(clearedRoom, transform);
+        }
+        
         thisRoom.isCleared = true;
     }
 }

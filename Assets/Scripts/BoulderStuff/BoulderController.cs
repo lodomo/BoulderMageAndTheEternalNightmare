@@ -26,6 +26,13 @@ public class BoulderController : MonoBehaviour
     [Range(0, .3f)] [SerializeField] private float movementSmoothing = .05f;
     private Transform _transform;
 
+    [SerializeField] private GameObject landDust;
+    [SerializeField] private Transform landDustSpawnPoint;
+    [SerializeField] private GameObject jumpDust;
+    [SerializeField] private Transform jumpDustSpawnPoint;
+    [SerializeField] private GameObject wallDust;
+    [SerializeField] private Transform wallDustSpawnPoint;
+
 
     private void Awake()
     {
@@ -93,6 +100,7 @@ public class BoulderController : MonoBehaviour
         var velocity = _rigidbody2D.velocity;
         velocity.y = 0;
         _rigidbody2D.velocity = velocity;
+        Instantiate(jumpDust, jumpDustSpawnPoint.position, jumpDustSpawnPoint.rotation);
         while (isJumping)
         {
             var deltaTime = Time.fixedDeltaTime;
@@ -115,6 +123,7 @@ public class BoulderController : MonoBehaviour
         var velocity = _rigidbody2D.velocity;
         velocity.y = 0;
         _rigidbody2D.velocity = velocity;
+        Instantiate(jumpDust, jumpDustSpawnPoint.position, jumpDustSpawnPoint.rotation);
 
         while (isJumping)
         {
@@ -155,6 +164,7 @@ public class BoulderController : MonoBehaviour
     {
         onGround = true;
         canAirJump = true;
+        Instantiate(landDust, landDustSpawnPoint.position, landDustSpawnPoint.rotation);
     }
 
     private void LeaveGround()
