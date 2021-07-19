@@ -134,11 +134,21 @@ public class BoulderController : MonoBehaviour
 
     private void WallJump()
     {
-        var direction = new Vector2(-1 * _transform.localScale.x, 1);
-        _rigidbody2D.velocity = Vector2.zero;
-        _rigidbody2D.AddForce(direction * wallJumpForce, ForceMode2D.Impulse);
-        Flip();
-        StartCoroutine(FlipDisable());
+        if (onGround) return;
+        if (_rigidbody2D.velocity.y > 1)
+        {
+            if (!canAirJump) return;
+            canAirJump = false;
+            StartCoroutine(Co_AirJump());
+        }
+        else
+        {
+            var direction = new Vector2(-1 * _transform.localScale.x, 1);
+            _rigidbody2D.velocity = Vector2.zero;
+            _rigidbody2D.AddForce(direction * wallJumpForce, ForceMode2D.Impulse);
+            Flip();
+            StartCoroutine(FlipDisable()); 
+        }
     }
 
     private void HitGround()
@@ -188,6 +198,7 @@ public class BoulderController : MonoBehaviour
         var localScale = _transform.localScale;
         var input = _playerInput.DPad.x;
         var velocity = _rigidbody2D.velocity.x;
+        
         if (input > 0 && localScale.x < 0)
         {
             Flip();

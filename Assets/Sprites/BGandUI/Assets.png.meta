@@ -295,7 +295,7 @@ TextureImporter:
     second: BackgroundSpriteSheet_96
   - first:
       213: -5056853182159015176
-    second: BackgroundSpriteSheet_97
+    second: Key
   - first:
       213: 6128668139306681154
     second: BackgroundSpriteSheet_98
@@ -2887,13 +2887,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BackgroundSpriteSheet_97
+      name: Key
       rect:
         serializedVersion: 2
         x: 8
-        y: 72
+        y: 64
         width: 8
-        height: 8
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3197,27 +3197,6 @@ TextureImporter:
       bones: []
       spriteID: 360450eced43effe0800000000000000
       internalID: -1153426323016433565
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_113
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 64
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dfcb86c81b1feeec0800000000000000
-      internalID: -3535622912572080899
       vertices: []
       indices: 
       edges: []

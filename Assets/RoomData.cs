@@ -33,7 +33,7 @@ public class RoomData : MonoBehaviour
 
     private IEnumerator Co_CreateRoomAssets()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.25f);
         if (!thisRoom.isCleared)
         {
             spawnedRoom = Instantiate(startRoom, transform);

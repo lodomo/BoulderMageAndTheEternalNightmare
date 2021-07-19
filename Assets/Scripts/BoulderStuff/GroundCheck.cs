@@ -15,38 +15,72 @@ public class GroundCheck : MonoBehaviour
     
     private bool _onGroundBool;
     public bool onGroundBool => _onGroundBool;
+    private bool onGroundThisFrame;
+
+    private Transform _transform;
+    const float GroundedRadius = .2f;
+    [SerializeField] private GameObject boulderMage;
 
     private void Awake()
     {
         CoyoteWaitTime = new WaitForSeconds(CoyoteTime);
-    }
-    
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (_onGroundBool)
-        {
-            reGround = true;
-        }
-        OnGround?.Invoke();
-       _onGroundBool = true;
+        _transform = transform;
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    private void FixedUpdate()
     {
-        StartCoroutine(Co_CoyoteTime());
-    }
-
-    private IEnumerator Co_CoyoteTime()
-    {
-        yield return CoyoteWaitTime;
+        var lastFrame = onGroundThisFrame;
+        onGroundThisFrame = false;
         
-        if (!reGround)
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(_transform.position, GroundedRadius);
+        for (int i = 0; i < colliders.Length; i++)
         {
-            OffGround?.Invoke();
+            if (colliders[i].gameObject != boulderMage)
+            {
+                onGroundThisFrame = true;
+            }
+        }
+
+        if (lastFrame && onGroundThisFrame) return;
+
+        if (onGroundThisFrame)
+        {
+            _onGroundBool = true;
+            OnGround?.Invoke();
+        }
+        else
+        {
             _onGroundBool = false;
+            OffGround?.Invoke();
         }
-        
-        reGround = false;
-
     }
+
+    // private void OnTriggerEnter2D(Collider2D other)
+    // {
+    //     if (_onGroundBool)
+    //     {
+    //         reGround = true;
+    //     }
+    //     OnGround?.Invoke();
+    //    _onGroundBool = true;
+    // }
+
+    // private void OnTriggerExit2D(Collider2D other)
+    // {
+    //     StartCoroutine(Co_CoyoteTime());
+    // }
+
+    // private IEnumerator Co_CoyoteTime()
+    // {
+    //     yield return CoyoteWaitTime;
+    //     
+    //     if (!reGround)
+    //     {
+    //         OffGround?.Invoke();
+    //         _onGroundBool = false;
+    //     }
+    //     
+    //     reGround = false;
+    //
+    // }
 }

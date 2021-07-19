@@ -8,15 +8,18 @@ public class PlayerStats : MonoBehaviour
 {
     [SerializeField] private int maxHearts = 3;
     [SerializeField] private int curHearts = 3;
-    [SerializeField] private int lives = 3;
+    [SerializeField] private int deaths = 0;
     [SerializeField] private int coins = 0;
     [SerializeField] private Transform reSpawnLocation;
+    public Transform ReSpawnLocation => reSpawnLocation;
     public int CurHearts => curHearts;
-    public int Lives => lives;
+    public int Deaths => deaths;
     public int Coins => coins;
 
     public Action HeartsChanged;
     public Action<GameObject> SetRespawner;
+
+    public Action CoinsChanged;
 
     public void ChangeCurHearts(int i)
     {
@@ -35,15 +38,15 @@ public class PlayerStats : MonoBehaviour
         HeartsChanged?.Invoke();
     }
 
-    public void ChangeLives(int i)
+    public void ChangeDeaths(int i)
     {
-        lives += i;
+        deaths += i;
     }
     
     public void ChangeCoins(int i)
     {
         coins += i;
-        
+        CoinsChanged?.Invoke();
         //TODO Lives from coins.
     }
 

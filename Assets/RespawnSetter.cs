@@ -15,6 +15,7 @@ public class RespawnSetter : MonoBehaviour
     {
         _playerStats = GameObject.Find("Globals").GetComponent<Globals>().PlayerStatuses[0];
         _playerStats.SetRespawner += UpdateRespawner;
+        _animator = gameObject.GetComponent<Animator>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -26,6 +27,7 @@ public class RespawnSetter : MonoBehaviour
 
     private void UpdateRespawner(GameObject gO)
     {
-        //TODO SETUP RESPAWNER
+        isCurrentSpawner = gO == gameObject;
+        _animator.SetBool("isSpawner", isCurrentSpawner);
     }
 }

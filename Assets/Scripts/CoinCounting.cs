@@ -15,11 +15,13 @@ public class CoinCounting : MonoBehaviour
     void Awake()
     {
         playerStats = GameObject.Find("Globals").GetComponent<Globals>().PlayerStatuses[playerID];
+        
     }
 
     private void Start()
     {
         UpdateCoins();
+        playerStats.CoinsChanged += UpdateCoins;
     }
 
     private void UpdateCoins()

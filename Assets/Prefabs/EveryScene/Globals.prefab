@@ -42,6 +42,7 @@ GameObject:
   m_Component:
   - component: {fileID: 735854889877329480}
   - component: {fileID: 735854889877329481}
+  - component: {fileID: 1086922577}
   m_Layer: 0
   m_Name: Globals
   m_TagString: Untagged
@@ -80,6 +81,21 @@ MonoBehaviour:
   PlayerInputs:
   - {fileID: 735854890346229689}
   - {fileID: 0}
+  PlayerStatuses:
+  - {fileID: 6989560576283027084}
+  - {fileID: 0}
+--- !u!114 &1086922577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735854889877329486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e760a271b8272c41a53a4b95624d69b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &735854890346229695
 GameObject:
   m_ObjectHideFlags: 0
@@ -715,6 +731,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 394cf676ca4846343b753fed7e82a80e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hearts: 3
+  maxHearts: 3
+  curHearts: 3
   lives: 3
   coins: 0
+  reSpawnLocation: {fileID: 0}
