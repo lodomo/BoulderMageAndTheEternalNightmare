@@ -1,8 +1,7 @@
 TODO LIST FOR BOULDER MAGE:
 
 Level dressings
-D4 needs more mice
-E4 needs enemies and water spigot.
+E4 needs enemies.
 E2 needs hazards, pickupable key - key to follow BM
 C3 needs full design and enemies
 B3 needs design for jumping

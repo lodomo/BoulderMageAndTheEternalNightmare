@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class GiveHealth : MonoBehaviour
 {
+    [SerializeField] private GameObject getHeart;
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         print("Heal Collision Detected");
@@ -16,6 +18,7 @@ public class GiveHealth : MonoBehaviour
     private IEnumerator DestroyNextFrame()
     {
         yield return new WaitForEndOfFrame();
+        Instantiate(getHeart, transform.position, transform.rotation);
         Destroy(gameObject);
     }
 }

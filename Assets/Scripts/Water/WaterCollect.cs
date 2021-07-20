@@ -12,6 +12,8 @@ public class WaterCollect : MonoBehaviour
     [SerializeField] private bool held = false;
     public bool Held => held;
     [SerializeField] private WaterThrow _waterThrow;
+    private StaffController staff;
+    [SerializeField] private WaterSounds _sounds;
 
     private void Awake()
     {
@@ -33,9 +35,18 @@ public class WaterCollect : MonoBehaviour
             bc2d.enabled = false;
             _followVector2.Dom = other.gameObject.transform.Find("ElementHolder");
             _followVector2.StartFollow();
-            var staff = other.gameObject.GetComponent<StaffController>();
-            staff.waterThrow = _waterThrow;
+            staff = other.gameObject.GetComponent<StaffController>();
+            staff.ThrowWater += _waterThrow.GetThrown;
             cc2d.enabled = true;
+            _sounds.Pop();
+        }
+    }
+
+    private void OnDestroy()
+    {
+        if (staff != null)
+        {
+            staff.ThrowWater -= _waterThrow.GetThrown;
         }
     }
 }

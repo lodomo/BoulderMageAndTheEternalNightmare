@@ -55,25 +55,25 @@ TextureImporter:
     second: BackgroundSpriteSheet_16
   - first:
       213: 2197089127677238047
-    second: BackgroundSpriteSheet_17
+    second: Lava_0
   - first:
       213: -3070899167234790955
     second: BackgroundSpriteSheet_18
   - first:
       213: 6963280059088819902
-    second: BackgroundSpriteSheet_19
+    second: Lava_1
   - first:
       213: -1982105873320659372
     second: BackgroundSpriteSheet_20
   - first:
       213: 1788665370348468774
-    second: BackgroundSpriteSheet_21
+    second: Lava_2
   - first:
       213: -1115895181742753797
     second: BackgroundSpriteSheet_22
   - first:
       213: 3842866942308908863
-    second: BackgroundSpriteSheet_23
+    second: Lava_3
   - first:
       213: -1487369131652149907
     second: BackgroundSpriteSheet_24
@@ -151,25 +151,25 @@ TextureImporter:
     second: BackgroundSpriteSheet_48
   - first:
       213: -8443551822768201925
-    second: BackgroundSpriteSheet_49
+    second: Lava_4
   - first:
       213: -5582327334758766402
     second: BackgroundSpriteSheet_50
   - first:
       213: 8033089687069623634
-    second: BackgroundSpriteSheet_51
+    second: Lava_5
   - first:
       213: 4404101073666323925
     second: BackgroundSpriteSheet_52
   - first:
       213: -8690638972659213535
-    second: BackgroundSpriteSheet_53
+    second: Lava_6
   - first:
       213: 1619299959227968885
     second: BackgroundSpriteSheet_54
   - first:
       213: -6658675073570341388
-    second: BackgroundSpriteSheet_55
+    second: Lava_7
   - first:
       213: 5474627584084948798
     second: BackgroundSpriteSheet_56
@@ -1207,13 +1207,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BackgroundSpriteSheet_17
+      name: Lava_0
       rect:
         serializedVersion: 2
         x: 8
-        y: 112
-        width: 8
-        height: 8
+        y: 104
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1228,34 +1228,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BackgroundSpriteSheet_18
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 112
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5d96deb4a79f165d0800000000000000
-      internalID: -3070899167234790955
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_19
+      name: Lava_1
       rect:
         serializedVersion: 2
         x: 24
-        y: 112
-        width: 8
-        height: 8
+        y: 104
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1270,34 +1249,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BackgroundSpriteSheet_20
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 112
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 456b189b5352e74e0800000000000000
-      internalID: -1982105873320659372
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_21
+      name: Lava_2
       rect:
         serializedVersion: 2
         x: 40
-        y: 112
-        width: 8
-        height: 8
+        y: 104
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1312,34 +1270,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BackgroundSpriteSheet_22
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 112
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bf737a59e3b8380f0800000000000000
-      internalID: -1115895181742753797
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_23
+      name: Lava_3
       rect:
         serializedVersion: 2
         x: 56
-        y: 112
-        width: 8
-        height: 8
+        y: 104
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1349,27 +1286,6 @@ TextureImporter:
       bones: []
       spriteID: f3ff967af1b945530800000000000000
       internalID: 3842866942308908863
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_24
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 112
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d6d0ef9b7adcb5be0800000000000000
-      internalID: -1487369131652149907
       vertices: []
       indices: 
       edges: []
@@ -1543,174 +1459,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BackgroundSpriteSheet_33
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 104
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: efca8ae096e997fe0800000000000000
-      internalID: -1190746452408095490
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_34
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 104
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a5f21748a388ff680800000000000000
-      internalID: -8719100568654500006
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_35
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 104
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 122b3725654979540800000000000000
-      internalID: 5014639808571748897
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_36
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 104
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca9dfeecb38601d70800000000000000
-      internalID: 9011817460452546988
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_37
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 104
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 28c6a80f49cf34150800000000000000
-      internalID: 5855801657132739714
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_38
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 104
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 009259168262838b0800000000000000
-      internalID: -5172342217157302016
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_39
-      rect:
-        serializedVersion: 2
-        x: 56
-        y: 104
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 14c4cf7cb2a695b60800000000000000
-      internalID: 7735330571256876097
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_40
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 104
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0ccb13f0d1b726580800000000000000
-      internalID: -8835364154208305984
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: BackgroundSpriteSheet_41
       rect:
         serializedVersion: 2
@@ -1879,13 +1627,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BackgroundSpriteSheet_49
+      name: Lava_4
       rect:
         serializedVersion: 2
         x: 8
-        y: 96
-        width: 8
-        height: 8
+        y: 88
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1900,34 +1648,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BackgroundSpriteSheet_50
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 96
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eb820cf8dd69782b0800000000000000
-      internalID: -5582327334758766402
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_51
+      name: Lava_5
       rect:
         serializedVersion: 2
         x: 24
-        y: 96
-        width: 8
-        height: 8
+        y: 88
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1942,34 +1669,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BackgroundSpriteSheet_52
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 96
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5d53cc2b7928e1d30800000000000000
-      internalID: 4404101073666323925
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_53
+      name: Lava_6
       rect:
         serializedVersion: 2
         x: 40
-        y: 96
-        width: 8
-        height: 8
+        y: 88
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1984,34 +1690,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BackgroundSpriteSheet_54
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 96
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 57d6696cbb8e87610800000000000000
-      internalID: 1619299959227968885
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_55
+      name: Lava_7
       rect:
         serializedVersion: 2
         x: 56
-        y: 96
-        width: 8
-        height: 8
+        y: 88
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2021,27 +1706,6 @@ TextureImporter:
       bones: []
       spriteID: 4fd771dbc42a793a0800000000000000
       internalID: -6658675073570341388
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_56
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 96
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e3730fa28c8c9fb40800000000000000
-      internalID: 5474627584084948798
       vertices: []
       indices: 
       edges: []
@@ -2210,174 +1874,6 @@ TextureImporter:
       bones: []
       spriteID: 0d0944fb65fc43920800000000000000
       internalID: 2969226025827078352
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_65
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 88
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8cf897acfe9ffb1b0800000000000000
-      internalID: -5638513400155107384
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_66
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 88
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d3336c97427ce8550800000000000000
-      internalID: 6165083899392570173
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_67
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 88
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bca48871b50b86430800000000000000
-      internalID: 3776462192833481419
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_68
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 88
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dd20d612b4c389dc0800000000000000
-      internalID: -3632086806093298979
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_69
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 88
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 05dc0ac8112281170800000000000000
-      internalID: 8149300984496049488
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_70
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 88
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3e7f603b3e86cbc10800000000000000
-      internalID: 2070645255854028771
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_71
-      rect:
-        serializedVersion: 2
-        x: 56
-        y: 88
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 53b4f320be29a37e0800000000000000
-      internalID: -1784952764246308043
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_72
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 88
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9bf03491151b87eb0800000000000000
-      internalID: -4721829247423672391
       vertices: []
       indices: 
       edges: []
@@ -3921,7 +3417,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 40
-        width: 8
+        width: 32
         height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -3937,69 +3433,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BackgroundSpriteSheet_161
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 40
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bf68c295294c65b50800000000000000
-      internalID: 6581664038288918267
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_162
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 40
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 016019032411a8550800000000000000
-      internalID: 6163758015990269456
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundSpriteSheet_163
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 40
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1bff186cc5d9705a0800000000000000
-      internalID: -6555097710821507151
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: BackgroundSpriteSheet_164
       rect:
         serializedVersion: 2
@@ -4009,7 +3442,7 @@ TextureImporter:
         height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 3, y: 3, z: 3, w: 3}
       outline: []
       physicsShape: []
       tessellationDetail: 0

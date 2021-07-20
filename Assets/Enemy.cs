@@ -6,6 +6,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour, IDamagable
 {
     [SerializeField] private bool isAngry;
+    public bool IsAngry => isAngry;
     [SerializeField] private int health;
     [SerializeField] private GameObject deathAnimation;
     [SerializeField] private GameObject treasure;
@@ -29,8 +30,9 @@ public class Enemy : MonoBehaviour, IDamagable
     {
         if (hitThisFrame) return;
         StartCoroutine(HitBuffer());
-
+        
         health -= damage;
+        AngryCheck();
         SetAnimHealth();
         
 
@@ -85,4 +87,21 @@ public class Enemy : MonoBehaviour, IDamagable
         direction.y = .5f;
         _rigidbody2D.velocity = direction * 10;
     }
+
+    private void AngryCheck()
+    {
+        if (health >= 1) return;
+        if (isAngry) return;
+        StartCoroutine(Co_AngryCheck());
+    }
+
+    private IEnumerator Co_AngryCheck()
+    {
+        
+        yield return new WaitForSeconds(3);
+        isAngry = true;
+        _animator.SetBool("isAngry", true);
+    }
+    
+    
 }

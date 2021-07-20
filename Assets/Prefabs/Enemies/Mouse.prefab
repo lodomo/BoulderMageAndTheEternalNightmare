@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 867593761106715992}
   - component: {fileID: 4300336458913562240}
   - component: {fileID: 5763526331107229374}
+  - component: {fileID: 3751058516510428096}
   m_Layer: 0
   m_Name: Mouse
   m_TagString: Untagged
@@ -122,7 +123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isAngry: 0
-  health: 2
+  health: 1
   deathAnimation: {fileID: 980956292991015131, guid: b922e0852cb280c43863736c7b8d8633, type: 3}
   treasure: {fileID: 1738719999161996865, guid: b777ba6c9f258d34fadddb6c3c39e93f, type: 3}
 --- !u!50 &7782085759985318118
@@ -141,7 +142,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 5
-  m_Material: {fileID: 6200000, guid: d0e7a8675a053354f8052378d5eba599, type: 2}
+  m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
@@ -188,6 +189,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   groundCheck: {fileID: 1927120847976317596}
   wallCheck: {fileID: 4309346768814472721}
+--- !u!114 &3751058516510428096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154507096877140778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f099857094ac23b47a8bbd507de83b62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagList: 3
 --- !u!1 &7549771868980150090
 GameObject:
   m_ObjectHideFlags: 0

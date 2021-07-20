@@ -14,19 +14,19 @@ public class PatrolPlatform : MonoBehaviour
     [SerializeField] private EnemyOtherCheck wallCheck;
     private Vector2 _direction = new Vector2(0, 0);
     private float speed = 2;
+    private Enemy _enemy;
 
     private void Awake()
     {
         _rigidbody2D = gameObject.GetComponent<Rigidbody2D>();
         _transform = transform;
+        _enemy = gameObject.GetComponent<Enemy>();
     }
 
     private void FixedUpdate()
     {
-        _direction.x = _transform.localScale.x;
-        _rigidbody2D.velocity = _direction * speed;
-        NotOnGround();
-        TouchWall();
+        Patrol();
+        AngryPatrol();
     }
 
     private void NotOnGround()
@@ -46,5 +46,23 @@ public class PatrolPlatform : MonoBehaviour
         var temp = _transform.localScale;
         temp.x *= -1;
         _transform.localScale = temp;
+    }
+
+    private void Patrol()
+    {
+        if (_enemy.Health == 0) return;
+        _direction.x = _transform.localScale.x;
+        _rigidbody2D.velocity = _direction * speed;
+        NotOnGround();
+        TouchWall();
+    }
+
+    private void AngryPatrol()
+    {
+        if (!_enemy.IsAngry) return;
+        _direction.x = _transform.localScale.x;
+        _rigidbody2D.velocity = _direction * (speed * 5);
+        NotOnGround();
+        TouchWall();
     }
 }

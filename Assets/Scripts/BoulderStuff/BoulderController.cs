@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Rewired;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class BoulderController : MonoBehaviour
 {
@@ -19,7 +20,7 @@ public class BoulderController : MonoBehaviour
     [SerializeField] private bool canAirJump;
     [SerializeField] private bool canFlip = true;
     private WaitForEndOfFrame _waitForEndOfFrame = new WaitForEndOfFrame();
-    private WaitForSeconds _flipDisableTimer = new WaitForSeconds(0.25f);
+    private WaitForSeconds _flipDisableTimer = new WaitForSeconds(0.3f);
     private GroundCheck groundCheck;
     private WallCheck wallCheck;
     private Vector3 ZeroVector = Vector3.zero;
@@ -32,6 +33,9 @@ public class BoulderController : MonoBehaviour
     [SerializeField] private Transform jumpDustSpawnPoint;
     [SerializeField] private GameObject wallDust;
     [SerializeField] private Transform wallDustSpawnPoint;
+    [SerializeField] private PlayerSounds _sounds;
+
+    public bool isSpawning;
 
 
     private void Awake()
@@ -63,6 +67,7 @@ public class BoulderController : MonoBehaviour
 
     private void HorizontalMovement(float input)
     {
+        if (isSpawning) return;
         if (!canFlip) return;
         // Move the character by finding the target velocity
         Vector3 targetVelocity = new Vector2(input * moveSpeed, _rigidbody2D.velocity.y);
@@ -77,6 +82,7 @@ public class BoulderController : MonoBehaviour
 
     private void JumpPress()
     {
+        if (isSpawning) return;
         isJumping = true;
         if (onGround)
         {
@@ -101,6 +107,7 @@ public class BoulderController : MonoBehaviour
         velocity.y = 0;
         _rigidbody2D.velocity = velocity;
         Instantiate(jumpDust, jumpDustSpawnPoint.position, jumpDustSpawnPoint.rotation);
+        _sounds.Jump();
         while (isJumping)
         {
             var deltaTime = Time.fixedDeltaTime;
@@ -124,7 +131,7 @@ public class BoulderController : MonoBehaviour
         velocity.y = 0;
         _rigidbody2D.velocity = velocity;
         Instantiate(jumpDust, jumpDustSpawnPoint.position, jumpDustSpawnPoint.rotation);
-
+        _sounds.DoubleJump();
         while (isJumping)
         {
             var deltaTime = Time.fixedDeltaTime;
@@ -143,12 +150,14 @@ public class BoulderController : MonoBehaviour
 
     private void WallJump()
     {
+        if (isSpawning) return;
         if (onGround) return;
-        if (_rigidbody2D.velocity.y > 1)
+        if (_rigidbody2D.velocity.y > 2)
         {
             if (!canAirJump) return;
             canAirJump = false;
             StartCoroutine(Co_AirJump());
+            _sounds.DoubleJump();
         }
         else
         {
@@ -156,6 +165,7 @@ public class BoulderController : MonoBehaviour
             _rigidbody2D.velocity = Vector2.zero;
             _rigidbody2D.AddForce(direction * wallJumpForce, ForceMode2D.Impulse);
             Instantiate(wallDust, wallDustSpawnPoint.position, wallDustSpawnPoint.rotation);
+            _sounds.WallJump();
             Flip();
             StartCoroutine(FlipDisable()); 
         }
@@ -166,6 +176,7 @@ public class BoulderController : MonoBehaviour
         onGround = true;
         canAirJump = true;
         Instantiate(landDust, landDustSpawnPoint.position, landDustSpawnPoint.rotation);
+        _sounds.HitGround();
     }
 
     private void LeaveGround()

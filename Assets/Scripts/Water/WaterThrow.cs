@@ -14,6 +14,7 @@ public class WaterThrow : MonoBehaviour
     private Transform _transform;
     [SerializeField] private WaterGrow _waterGrow;
     [SerializeField] private GameObject flood;
+    [SerializeField] private GameObject floodSound;
 
     private void Awake()
     {
@@ -44,13 +45,21 @@ public class WaterThrow : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!isThrown) return;
+        //if (!isThrown) return;
         var othertag = other.gameObject.GetComponent<MoonTags>();
         if (othertag == null) return;
         if (othertag.TagList == TagList.Staff) return;
-        Instantiate(waterPop, _transform.position, _transform.rotation);
-        CheckFlood();
-        Destroy(gameObject);
+        if (othertag.TagList == TagList.Player) return;
+
+        if (othertag.TagList == TagList.Enemy || isThrown)
+        {
+            Instantiate(waterPop, _transform.position, _transform.rotation);
+            var damagable = other.GetComponent<IDamagable>();
+            damagable?.TakeDamage(1);
+            CheckFlood();
+            Destroy(gameObject);
+        }
+        
     }
 
     private void CheckFlood()
@@ -78,7 +87,7 @@ public class WaterThrow : MonoBehaviour
         yLocation += 0.5f;
 
         Instantiate(flood, new Vector3(xLocation, yLocation, 0), _transform.rotation);
-
+        Instantiate(floodSound);
 
     }
 }

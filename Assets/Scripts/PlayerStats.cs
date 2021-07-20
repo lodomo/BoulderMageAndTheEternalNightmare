@@ -18,6 +18,7 @@ public class PlayerStats : MonoBehaviour
 
     public Action HeartsChanged;
     public Action<GameObject> SetRespawner;
+    public Action DeathsChanged;
 
     public Action CoinsChanged;
 
@@ -46,6 +47,7 @@ public class PlayerStats : MonoBehaviour
     public void ChangeDeaths(int i)
     {
         deaths += i;
+        DeathsChanged?.Invoke();
     }
     
     public void ChangeCoins(int i)

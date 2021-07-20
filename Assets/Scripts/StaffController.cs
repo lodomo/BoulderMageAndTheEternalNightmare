@@ -13,6 +13,10 @@ public class StaffController : MonoBehaviour
 
     [SerializeField] private bool holdingWater = false;
     public WaterThrow waterThrow;
+    [SerializeField] private Transform boulderMage;
+    [SerializeField] private PlayerSounds _sounds;
+
+    public Action<float> ThrowWater;
     
     private void Awake()
     {
@@ -26,10 +30,12 @@ public class StaffController : MonoBehaviour
     {
         swingHold = true;
         _animator.SetBool("SwingHold", swingHold);
+        _sounds.Swing();
 
         if (!holdingWater) return;
         holdingWater = false;
         var direction = transform.localScale.x;
+        ThrowWater?.Invoke(direction);
         waterThrow.GetThrown(direction);
         waterThrow = null;
     }
@@ -42,10 +48,12 @@ public class StaffController : MonoBehaviour
         if (holdingWater)
         {
             holdingWater = false;
-            var direction = transform.localScale.x;
-            waterThrow.GetThrown(direction);
-            waterThrow = null;
+            var direction = boulderMage.localScale.x;
+            ThrowWater?.Invoke(direction);
+            //waterThrow.GetThrown(direction);
+            //waterThrow = null;
             _animator.SetTrigger("SwingOnce");
+            _sounds.Swing();
         }
     }
 
