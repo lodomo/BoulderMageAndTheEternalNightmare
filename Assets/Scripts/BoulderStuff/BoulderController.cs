@@ -155,6 +155,7 @@ public class BoulderController : MonoBehaviour
             var direction = new Vector2(-1 * _transform.localScale.x, 1);
             _rigidbody2D.velocity = Vector2.zero;
             _rigidbody2D.AddForce(direction * wallJumpForce, ForceMode2D.Impulse);
+            Instantiate(wallDust, wallDustSpawnPoint.position, wallDustSpawnPoint.rotation);
             Flip();
             StartCoroutine(FlipDisable()); 
         }

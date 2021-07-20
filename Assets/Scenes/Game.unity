@@ -9466,6 +9466,10 @@ PrefabInstance:
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[4].Array.data[39].Y
       value: -300000000
       objectReference: {fileID: 0}
+    - target: {fileID: 7165425983670714038, guid: fb567f0754d20814db4ccfecb6d35ae9, type: 3}
+      propertyPath: RoomRadius.x
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 7165425983863526997, guid: fb567f0754d20814db4ccfecb6d35ae9, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[1].Array.size
       value: 10
@@ -10423,6 +10427,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UserInterface
       objectReference: {fileID: 0}
+    - target: {fileID: 1056233674221350746, guid: 1caf60ca9ca539946a58d277cb295136, type: 3}
+      propertyPath: m_SortingOrder
+      value: 420
+      objectReference: {fileID: 0}
     - target: {fileID: 7203599047781602024, guid: 1caf60ca9ca539946a58d277cb295136, type: 3}
       propertyPath: heartNumber
       value: 1
@@ -10572,10 +10580,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6327526128631100444, guid: d2213bcb976b5164ea9337d87d017743, type: 3}
-      propertyPath: _playerInput
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 6327526129030478328, guid: d2213bcb976b5164ea9337d87d017743, type: 3}
       propertyPath: m_Name
       value: Player
@@ -10586,11 +10590,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6327526129030478329, guid: d2213bcb976b5164ea9337d87d017743, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.56
+      value: -6.0600004
       objectReference: {fileID: 0}
     - target: {fileID: 6327526129030478329, guid: d2213bcb976b5164ea9337d87d017743, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.81
+      value: -7.19
       objectReference: {fileID: 0}
     - target: {fileID: 6327526129030478329, guid: d2213bcb976b5164ea9337d87d017743, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10622,10 +10626,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6327526129030478329, guid: d2213bcb976b5164ea9337d87d017743, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6327526129577681069, guid: d2213bcb976b5164ea9337d87d017743, type: 3}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

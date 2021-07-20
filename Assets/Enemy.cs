@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour, IDamagable
     [SerializeField] private GameObject treasure;
     private bool hitThisFrame = false;
     private Rigidbody2D _rigidbody2D;
+    public int Health => health;
 
     private Animator _animator;
     private EnemyStage _enemyStage;
@@ -53,9 +54,25 @@ public class Enemy : MonoBehaviour, IDamagable
         TakeStaffDamage(other);
     }
 
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        DamageBoulderMage(other);
+    }
+
     private void SetAnimHealth()
     {
         _animator.SetInteger("health", health);
+    }
+
+    private void DamageBoulderMage(Collision2D other)
+    {
+        var otherTag = other.gameObject.GetComponent<MoonTags>();
+        if (otherTag == null) return;
+        if (otherTag.TagList != TagList.Player) return;
+        var damageable = other.gameObject.GetComponent<IDamagable>();
+        if (damageable == null) return;
+        damageable.TakeDamage(1);
+        
     }
 
     private void TakeStaffDamage(Collider2D other)

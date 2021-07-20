@@ -1,0 +1,23 @@
+TODO LIST FOR BOULDER MAGE:
+
+Level dressings
+D4 needs more mice
+E4 needs enemies and water spigot.
+E2 needs hazards, pickupable key - key to follow BM
+C3 needs full design and enemies
+B3 needs design for jumping
+B2 needs design and enemies
+C2 needs chest and boss key - to follow BM
+A2 needs jump quest
+A1 needs boss design
+
+Opening needs Magus to jump into dream.
+Ending needs to just be BM waking up. 
+
+BM death animation
+
+Magus Death Animation
+Magus Boss health design.
+
+
+Fuck that's a lot. 4 days. Let's go.

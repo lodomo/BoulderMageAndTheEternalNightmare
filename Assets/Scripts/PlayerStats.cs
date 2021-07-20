@@ -21,6 +21,11 @@ public class PlayerStats : MonoBehaviour
 
     public Action CoinsChanged;
 
+    [SerializeField] private bool hasNormalKey;
+    [SerializeField] private bool hasBossKey;
+    public bool HasNormalKey => hasNormalKey;
+    public bool HasBossKey => hasBossKey;
+
     public void ChangeCurHearts(int i)
     {
         curHearts += i;
