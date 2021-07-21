@@ -56,6 +56,9 @@ TextureImporter:
   - first:
       213: 3264559304218543707
     second: Point_2
+  - first:
+      213: -5493421317455503273
+    second: zBlank
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -530,6 +533,27 @@ TextureImporter:
       bones: []
       spriteID: b56842c046b0e4d20800000000000000
       internalID: 3264559304218543707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zBlank
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 6
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 750a18bca6273c3b0800000000000000
+      internalID: -5493421317455503273
       vertices: []
       indices: 
       edges: []

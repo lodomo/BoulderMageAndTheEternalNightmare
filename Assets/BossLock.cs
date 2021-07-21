@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class BossLock : MonoBehaviour
 {
+    [SerializeField] private AudioSource _audioSource;
+
+    private void Awake()
+    {
+        _audioSource = gameObject.GetComponent<AudioSource>();
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {

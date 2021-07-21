@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MidHealth
+  m_Controller: {fileID: 9100000, guid: bcc45cf42845bd647bf88674c0d5cba6, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: f6e090639d7a99144acf2bd5d41d40f0, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 2967cac2e0fa5774ab84eeed6e0ebc39, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 25c9ead52414965478d7d361254fe7e6, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 4faccb6606661434b97f78eb50a4e38e, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: e9cc72602ef07db41bea1b7143df7960, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: f0dbb58593952414d99c92cebacd4a4b, type: 2}

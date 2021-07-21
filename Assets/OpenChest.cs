@@ -8,10 +8,12 @@ public class OpenChest : MonoBehaviour
     private Animator _animator;
     [SerializeField] private GameObject BossKey;
     [SerializeField] private Transform keySpawn;
+    [SerializeField] private AudioSource _audioSource;
 
     private void Awake()
     {
         _animator = gameObject.GetComponent<Animator>();
+        _audioSource = gameObject.GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -22,6 +24,7 @@ public class OpenChest : MonoBehaviour
         {
             _animator.SetTrigger("OpenChest");
             Destroy(otherTag.gameObject);
+            _audioSource.Play();
             Instantiate(BossKey, keySpawn.position, keySpawn.rotation);
         }
     }

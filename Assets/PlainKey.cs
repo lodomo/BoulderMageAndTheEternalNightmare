@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class PlainKey : MonoBehaviour
 {
+    private AudioSource _audioSource;
     private FollowVector2 _followVector2;
 
     private void Awake()
@@ -17,6 +18,7 @@ public class PlainKey : MonoBehaviour
         var otherTag = other.gameObject.GetComponent<MoonTags>();
         if (otherTag == null) return;
         if (otherTag.TagList != TagList.Player) return;
+        _audioSource.Play();
         var dom = other.gameObject.transform.Find("KeyLocation").transform;
         
         _followVector2.Dom = dom;

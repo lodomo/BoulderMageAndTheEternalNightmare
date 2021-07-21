@@ -10,6 +10,8 @@ public class RoomData : MonoBehaviour
     [SerializeField] private GameObject clearedRoom;
     [SerializeField] private GameObject startRoom;
 
+    [SerializeField] private AudioSource clearRoomSound;
+
     private GameObject spawnedRoom;
     private bool _isclearedRoomNotNull;
 
@@ -50,6 +52,7 @@ public class RoomData : MonoBehaviour
 
     public void RoomClear()
     {
+        clearRoomSound.Play();
         DestroyStartRoom();
         
         if (_isclearedRoomNotNull)

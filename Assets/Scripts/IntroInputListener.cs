@@ -21,7 +21,7 @@ public class IntroInputListener : MonoBehaviour
     
     private IEnumerator StartGame()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
 
         while (!_playerInput.AnyButton)
         {

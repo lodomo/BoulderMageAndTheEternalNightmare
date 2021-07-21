@@ -6,10 +6,12 @@ using UnityEngine;
 public class CrumbleBrick : MonoBehaviour
 {
     private Animator _animator;
+    private AudioSource _audioSource;
 
     void Awake()
     {
         _animator = gameObject.GetComponent<Animator>();
+        _audioSource = gameObject.GetComponent<AudioSource>();
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -19,6 +21,7 @@ public class CrumbleBrick : MonoBehaviour
        if (otherTag.TagList == TagList.Player)
        {
            _animator.SetTrigger("Crumble");
+           _audioSource.Play();
        }
     }
 }

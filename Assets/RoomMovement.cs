@@ -16,6 +16,8 @@ public class RoomMovement : MonoBehaviour
 
     public Action RoomChange;
 
+    [SerializeField] private AudioSource changeRoomSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -92,6 +94,7 @@ public class RoomMovement : MonoBehaviour
         
         Time.timeScale = 0;
 
+        changeRoomSound.Play();
         while (currentLerpTime < cameraLerpTime)
         {
             //increment timer once per frame
@@ -109,6 +112,7 @@ public class RoomMovement : MonoBehaviour
         Time.timeScale = 1;
         
         RoomChange?.Invoke();
+        
 
         if (!launch) yield break;
         print("BOULDER UP!");
