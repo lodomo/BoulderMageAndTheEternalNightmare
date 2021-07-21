@@ -36,7 +36,7 @@ public class StaffController : MonoBehaviour
         holdingWater = false;
         var direction = transform.localScale.x;
         ThrowWater?.Invoke(direction);
-        waterThrow.GetThrown(direction);
+        //waterThrow.GetThrown(direction);
         waterThrow = null;
     }
 

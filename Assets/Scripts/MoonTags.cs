@@ -16,5 +16,7 @@ public enum TagList
     Water,
     Enemy,
     Stage,
-    Flood
+    Flood,
+    PlainKey,
+    BossKey
 }
