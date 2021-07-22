@@ -1024,8 +1024,9 @@ GameObject:
   - component: {fileID: 7963227403728575061}
   - component: {fileID: 2984332714563173245}
   - component: {fileID: 8522867768688631277}
+  - component: {fileID: 1171128722439733410}
   m_Layer: 0
-  m_Name: SceneChange
+  m_Name: SceneChanger-ENDOFGAME
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1128,6 +1129,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1171128722439733410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2980375155144173202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41a14025d9285464790fe1ade6e14f8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dungeon: {fileID: 0}
+  magusHealth: {fileID: 152176603998970141}
+  endOfGame: {fileID: 3106476823583277193, guid: b67290b152965c448ba999cedc40dc82, type: 3}
+  gameCamera: {fileID: 0}
 --- !u!1 &3008634925803652347
 GameObject:
   m_ObjectHideFlags: 0
