@@ -11,10 +11,13 @@ public class PlainKey : MonoBehaviour
     private void Awake()
     {
         _followVector2 = gameObject.GetComponent<FollowVector2>();
+        _audioSource = gameObject.GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if (_followVector2.isFollowing) return;
+        
         var otherTag = other.gameObject.GetComponent<MoonTags>();
         if (otherTag == null) return;
         if (otherTag.TagList != TagList.Player) return;

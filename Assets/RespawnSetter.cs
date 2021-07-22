@@ -9,6 +9,7 @@ public class RespawnSetter : MonoBehaviour
     [SerializeField] private Transform respawnLocation;
     [SerializeField] private bool isCurrentSpawner = false;
     private PlayerStats _playerStats;
+    private AudioSource _audioSource;
     
 
     void Awake()
@@ -16,12 +17,18 @@ public class RespawnSetter : MonoBehaviour
         _playerStats = GameObject.Find("Globals").GetComponent<Globals>().PlayerStatuses[0];
         _playerStats.SetRespawner += UpdateRespawner;
         _animator = gameObject.GetComponent<Animator>();
+        _audioSource = gameObject.GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        var otherTag = other.gameObject.GetComponent<MoonTags>();
+        if (otherTag == null) return;
+        if (otherTag.TagList != TagList.Player) return;
+        if (isCurrentSpawner) return;
         _playerStats.SetRespawn(respawnLocation);
         _playerStats.SetRespawner?.Invoke(gameObject);
+        _audioSource.Play();
     }
 
 

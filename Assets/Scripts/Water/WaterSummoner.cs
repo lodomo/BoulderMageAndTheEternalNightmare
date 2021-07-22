@@ -24,7 +24,7 @@ public class WaterSummoner : MonoBehaviour
     {
         while (true)
         {
-            Instantiate(water, summonLocation.position, summonLocation.rotation);
+            Instantiate(water, summonLocation);
             yield return wfsSummonDelay;
         }
     }

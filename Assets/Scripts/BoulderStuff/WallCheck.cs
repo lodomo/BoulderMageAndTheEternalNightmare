@@ -33,7 +33,11 @@ public class WallCheck : MonoBehaviour
         {
             if (colliders[i].gameObject != boulderMage)
             {
-                onWallThisFrame = true;
+                var moonTag = colliders[i].gameObject.GetComponent<MoonTags>();
+                if (moonTag != null && moonTag.TagList == TagList.Stage)
+                {
+                    onWallThisFrame = true;
+                }
             }
         }
         

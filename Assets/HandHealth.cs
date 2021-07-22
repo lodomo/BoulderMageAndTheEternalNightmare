@@ -16,11 +16,14 @@ public class HandHealth : MonoBehaviour
     [SerializeField] private SpriteFlasher[] _spriteFlashers = new SpriteFlasher[6];
 
     private Animator _animator;
+    private AudioSource _audioSource;
+    [SerializeField] private AudioSource _handDeath;
     
     private void Awake()
     {
         _spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         _animator = gameObject.GetComponent<Animator>();
+        _audioSource = gameObject.GetComponent<AudioSource>();
     }
 
     public void FakeTriggerEnter(Collider2D other)
@@ -48,6 +51,16 @@ public class HandHealth : MonoBehaviour
         magusHealth.TakeDamage(1);
         _currentHandHealth -= 1;
         SetFlash();
+        
+        if (_currentHandHealth > 0)
+        {
+            _audioSource.Play();
+        }
+        else
+        {
+            _handDeath.Play();
+        }
+        
         _animator.SetInteger("Health", _currentHandHealth);
         yield return new WaitForSeconds(2f);
         canTakeDamage = true;
