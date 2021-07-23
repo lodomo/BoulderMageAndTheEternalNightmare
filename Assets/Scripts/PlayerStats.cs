@@ -27,6 +27,10 @@ public class PlayerStats : MonoBehaviour
     public bool HasNormalKey => hasNormalKey;
     public bool HasBossKey => hasBossKey;
 
+    [SerializeField] private MoonFinishTime finalPlayTime;
+    public MoonFinishTime FinalPlayTime => finalPlayTime;
+    [SerializeField] private GamePlayTimer _gamePlayTimer;
+
     public void ChangeCurHearts(int i)
     {
         curHearts += i;
@@ -60,5 +64,10 @@ public class PlayerStats : MonoBehaviour
     public void SetRespawn(Transform newRespawn)
     {
         reSpawnLocation = newRespawn;
+    }
+
+    public void FinishGameTimer()
+    {
+        finalPlayTime = _gamePlayTimer.GameFinish();
     }
 }

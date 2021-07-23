@@ -11,7 +11,7 @@ public class GroundCheck : MonoBehaviour
 
     [SerializeField] private float CoyoteTime;
     private WaitForSeconds CoyoteWaitTime;
-    private bool reGround = false;
+    //private bool reGround = false;
     
     private bool _onGroundBool;
     public bool OnGroundBool => _onGroundBool;

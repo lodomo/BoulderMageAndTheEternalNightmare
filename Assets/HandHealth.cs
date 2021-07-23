@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class HandHealth : MonoBehaviour
 {
-    private int _maxHandHealth = 10;
+    //private int _maxHandHealth = 10;
     private int _currentHandHealth = 10;
     public int CurrentHandHealth => _currentHandHealth;
     [SerializeField] private MagusHealth magusHealth;

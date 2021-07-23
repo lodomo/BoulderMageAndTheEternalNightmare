@@ -17,7 +17,7 @@ public class EndTheGame : MonoBehaviour
 
     private void Awake()
     {
-        dungeon = GameObject.Find("Dungeon");
+        dungeon = GameObject.FindGameObjectWithTag("Dungeon");
         gameCamera = GameObject.Find("GameCamera");
         userInterface = GameObject.Find("UserInterface");
         

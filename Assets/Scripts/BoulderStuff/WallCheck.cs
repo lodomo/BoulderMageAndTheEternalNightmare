@@ -11,7 +11,7 @@ public class WallCheck : MonoBehaviour
     [SerializeField] private bool _onWallBool;
     public bool onWallBool => _onWallBool;
     
-    private bool reWall = false;
+    //private bool reWall = false;
     
     private Transform _transform;
     const float GroundedRadius = .5f;
